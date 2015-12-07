@@ -12,26 +12,26 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :activity_time %><br>
+    <%= f.label :活動日時 %><br>
     <%= f.datetime_select :activity_time %>
   </div>
   <div class="field">
-    <%= f.label :customer_id %><br>
+    <%= f.label :会社名 %><br>
     <%= f.text_field :customer_id %>
   </div>
   <div class="field">
-    <%= f.label :sales_category %><br>
+    <%= f.label :営業区分 %><br>
     <%= f.text_field :sales_category %>
   </div>
   <div class="field">
-    <%= f.label :sales_achievement %><br>
+    <%= f.label :営業成果 %><br>
     <%= f.text_field :sales_achievement %>
   </div>
   <div class="field">
-    <%= f.label :detail %><br>
+    <%= f.label :"詳細" %><br>
     <%= f.text_area :detail %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :"登録" %>
   </div>
 <% end %>
