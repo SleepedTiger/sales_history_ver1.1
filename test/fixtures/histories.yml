@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  activity_time: 2015-12-07 02:42:58
+  customer_id: 
+  sales_category: MyString
+  sales_achievement: MyString
+  detail: MyText
+
+two:
+  activity_time: 2015-12-07 02:42:58
+  customer_id: 
+  sales_category: MyString
+  sales_achievement: MyString
+  detail: MyText
