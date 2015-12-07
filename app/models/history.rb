@@ -14,5 +14,5 @@
 
 class History < ActiveRecord::Base
   belongs_to :customer
-  validates :customer_id, :sales_achievement, :detail, presence: {psesent: true }
+  validates :customer_id, :sales_achievement, :detail, presence: true
 end
