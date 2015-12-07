@@ -13,4 +13,6 @@
 #
 
 class Customer < ActiveRecord::Base
+  validates :company_name, :zip, :address, :tel, :responsible_name, presence: true
+  validates :zip, :tel, numericality: { only_integer: true }
 end
