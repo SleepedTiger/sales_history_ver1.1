@@ -11,6 +11,10 @@
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
 #
+# Indexes
+#
+#  index_histories_on_customer_id  (customer_id)
+#
 
 class History < ActiveRecord::Base
   belongs_to :customer
