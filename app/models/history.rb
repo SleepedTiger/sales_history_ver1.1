@@ -14,5 +14,6 @@
 
 class History < ActiveRecord::Base
   belongs_to :customer
+  belongs_to :staff_info
   validates :customer_id, :sales_achievement, :detail, presence: true
 end
