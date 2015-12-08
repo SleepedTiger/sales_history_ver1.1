@@ -5,30 +5,33 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
 
 
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
-            mdl-layout--fixed-header">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+  mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <div class="mdl-layout-spacer"></div>
     </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Title</span>
+    <span class="mdl-layout-title">リスト</span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href=" <%= root_path %> "><i class="material-icons">account_balance</i>TOP</a>
+      <a class="mdl-navigation__link" href=" <%= histories_path %> "><i class="material-icons">business</i>営業リスト</a>
+      <a class="mdl-navigation__link" href=" <%= customers_path %> "><i class="material-icons">account_box</i>顧客リスト</a>
+      <a class="mdl-navigation__link" href=" <%=staff_infos_path %> "><i class="material-icons">group</i>社員リスト</a>
     </nav>
   </div>
 
   <main class="mdl-layout__content">
     <div class="page-content">
-    <%= yield %>
+      <%= yield %>
     </div>
   </main>
 </div>
