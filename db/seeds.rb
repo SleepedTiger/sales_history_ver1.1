@@ -148,7 +148,7 @@ History.create(:id => 6,
                )
 
 History.create(:id => 7,
-               :activity_time => DateTime.new(2015,8,16,09,41,12),
+               :activity_time => DateTime.new(2015,8,16,9,41,12),
                :customer_id => 7,
                :sales_category => '商品案内',
                :sales_achievement => '継続',
@@ -228,7 +228,7 @@ History.create(:id => 16,
                )
 
 History.create(:id => 17,
-               :activity_time => DateTime.new(2015,8,25,09,41,12),
+               :activity_time => DateTime.new(2015,8,25,9,41,12),
                :customer_id => 7,
                :sales_category => '契約',
                :sales_achievement => '達成',
@@ -308,7 +308,7 @@ History.create(:id => 26,
                )
 
 History.create(:id => 27,
-               :activity_time => DateTime.new(2015,9,5,09,41,12),
+               :activity_time => DateTime.new(2015,9,5,9,41,12),
                :customer_id => 9,
                :sales_category => '契約',
                :sales_achievement => '失敗',
@@ -388,7 +388,7 @@ History.create(:id => 36,
                )
 
 History.create(:id => 37,
-               :activity_time => DateTime.new(2015,9,15,09,41,12),
+               :activity_time => DateTime.new(2015,9,15,9,41,12),
                :customer_id => 10,
                :sales_category => '契約',
                :sales_achievement => '達成',
@@ -468,7 +468,7 @@ History.create(:id => 46,
                )
 
 History.create(:id => 47,
-               :activity_time => DateTime.new(2015,9,25,09,41,12),
+               :activity_time => DateTime.new(2015,9,25,9,41,12),
                :customer_id => 10,
                :sales_category => '契約',
                :sales_achievement => '継続',
@@ -548,7 +548,7 @@ History.create(:id => 56,
                )
 
 History.create(:id => 57,
-               :activity_time => DateTime.new(2015,10,12,09,41,12),
+               :activity_time => DateTime.new(2015,10,12,9,41,12),
                :customer_id => 4,
                :sales_category => '契約',
                :sales_achievement => '失敗',
@@ -628,7 +628,7 @@ History.create(:id => 66,
                )
 
 History.create(:id => 67,
-               :activity_time => DateTime.new(2015,10,25,09,41,12),
+               :activity_time => DateTime.new(2015,10,25,9,41,12),
                :customer_id => 3,
                :sales_category => '契約',
                :sales_achievement => '達成',
@@ -708,7 +708,7 @@ History.create(:id => 76,
                )
 
 History.create(:id => 77,
-               :activity_time => DateTime.new(2015,11,8,09,41,12),
+               :activity_time => DateTime.new(2015,11,8,9,41,12),
                :customer_id => 5,
                :sales_category => '契約',
                :sales_achievement => '達成',
@@ -788,7 +788,7 @@ History.create(:id => 86,
                )
 
 History.create(:id => 87,
-               :activity_time => DateTime.new(2015,11,23,09,41,12),
+               :activity_time => DateTime.new(2015,11,23,9,41,12),
                :customer_id => 9,
                :sales_category => '契約',
                :sales_achievement => '達成',
@@ -868,7 +868,7 @@ History.create(:id => 96,
                )
 
 History.create(:id => 97,
-               :activity_time => DateTime.new(2015,12,5,09,41,12),
+               :activity_time => DateTime.new(2015,12,5,9,41,12),
                :customer_id => 7,
                :sales_category => '商品案内',
                :sales_achievement => '継続',
