@@ -5,6 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
 StaffInfo.delete_all
 
 StaffInfo.create(:id => 1,
@@ -104,7 +105,8 @@ History.create(:id => 1,
                :customer_id => 1,
                :sales_category => '商品案内',
                :sales_achievement => '達成',
-               :detail => '北斗神拳の奥義本を提案し商談成立'
+               :detail => '北斗神拳の奥義本を提案し商談成立',
+               :staff_info_id => 5
                )
 
 History.create(:id => 2,
@@ -112,7 +114,8 @@ History.create(:id => 2,
                :customer_id => 2,
                :sales_category => '契約',
                :sales_achievement => '継続',
-               :detail => 'フェイスカバーを提案'
+               :detail => 'フェイスカバーを提案',
+               :staff_info_id => 1
                )
 
 History.create(:id => 3,
@@ -120,7 +123,8 @@ History.create(:id => 3,
                :customer_id => 3,
                :sales_category => 'クレーム処理',
                :sales_achievement => '失敗',
-               :detail => '究極のメニューが進まない'
+               :detail => '究極のメニューが進まない',
+               :staff_info_id => 2
                )
 
 History.create(:id => 4,
@@ -128,7 +132,8 @@ History.create(:id => 4,
                :customer_id => 4,
                :sales_category => '契約',
                :sales_achievement => '達成',
-               :detail => '福岡ガイド本共同出版提案し商談成立'
+               :detail => '福岡ガイド本共同出版提案し商談成立',
+               :staff_info_id => 3
                )
 
 History.create(:id => 5,
@@ -136,7 +141,8 @@ History.create(:id => 5,
                :customer_id => 5,
                :sales_category => '契約',
                :sales_achievement => '継続',
-               :detail => 'ノックバットの納品価格交渉中'
+               :detail => 'ノックバットの納品価格交渉中',
+               :staff_info_id => 4
                )
 
 History.create(:id => 6,
@@ -144,7 +150,8 @@ History.create(:id => 6,
                :customer_id => 6,
                :sales_category => 'クレーム処理',
                :sales_achievement => '継続',
-               :detail => 'オヤシロ様が後ろにいるとのことで特効薬を紹介'
+               :detail => 'オヤシロ様が後ろにいるとのことで特効薬を紹介',
+               :staff_info_id => 5
                )
 
 History.create(:id => 7,
@@ -152,7 +159,8 @@ History.create(:id => 7,
                :customer_id => 7,
                :sales_category => '商品案内',
                :sales_achievement => '継続',
-               :detail => 'お墓に添える造花の納品価格交渉中'
+               :detail => 'お墓に添える造花の納品価格交渉中',
+               :staff_info_id => 6
                )
 
 History.create(:id => 8,
@@ -160,7 +168,8 @@ History.create(:id => 8,
                :customer_id => 8,
                :sales_category => '契約',
                :sales_achievement => '達成',
-               :detail => 'CD販売の単独契約交渉成立'
+               :detail => 'CD販売の単独契約交渉成立',
+               :staff_info_id => 7
                )
 
 History.create(:id => 9,
@@ -168,7 +177,8 @@ History.create(:id => 9,
                :customer_id => 9,
                :sales_category => 'クレーム処理',
                :sales_achievement => '継続',
-               :detail => '息子が峠でドリフトする'
+               :detail => '息子が峠でドリフトする',
+               :staff_info_id => 8
                )
 
 History.create(:id => 10,
@@ -176,7 +186,8 @@ History.create(:id => 10,
                :customer_id => 10,
                :sales_category => '商品案内',
                :sales_achievement => '失敗',
-               :detail => '赤い染髪料は不要とのこと'
+               :detail => '赤い染髪料は不要とのこと',
+               :staff_info_id => 9
                )
 
 History.create(:id => 11,
@@ -184,7 +195,8 @@ History.create(:id => 11,
                :customer_id => 5,
                :sales_category => '商品紹介',
                :sales_achievement => '継続',
-               :detail => 'メモだよん'
+               :detail => 'メモだよん',
+               :staff_info_id => 10
                )
 
 History.create(:id => 12,
@@ -192,7 +204,8 @@ History.create(:id => 12,
                :customer_id => 9,
                :sales_category => '商品紹介',
                :sales_achievement => '失敗',
-               :detail => 'メモです'
+               :detail => 'メモです',
+               :staff_info_id => 8
                )
 
 History.create(:id => 13,
@@ -200,7 +213,8 @@ History.create(:id => 13,
                :customer_id => 10,
                :sales_category => '契約',
                :sales_achievement => '失敗',
-               :detail => 'メモじゃ'
+               :detail => 'メモじゃ',
+               :staff_info_id => 6
                )
 
 History.create(:id => 14,
@@ -208,7 +222,8 @@ History.create(:id => 14,
                :customer_id => 1,
                :sales_category => 'クレーム処理',
                :sales_achievement => '達成',
-               :detail => 'メモかな？'
+               :detail => 'メモかな？',
+               :staff_info_id => 3
                )
 
 History.create(:id => 15,
@@ -216,7 +231,8 @@ History.create(:id => 15,
                :customer_id => 5,
                :sales_category => 'クレーム処理',
                :sales_achievement => '継続',
-               :detail => 'メモばい'
+               :detail => 'メモばい',
+               :staff_info_id => 5
                )
 
 History.create(:id => 16,
@@ -224,7 +240,8 @@ History.create(:id => 16,
                :customer_id => 9,
                :sales_category => '商品紹介',
                :sales_achievement => '継続',
-               :detail => 'メモやけん'
+               :detail => 'メモやけん',
+               :staff_info_id => 4
                )
 
 History.create(:id => 17,
@@ -232,7 +249,8 @@ History.create(:id => 17,
                :customer_id => 7,
                :sales_category => '契約',
                :sales_achievement => '達成',
-               :detail => 'メモくさ'
+               :detail => 'メモくさ',
+               :staff_info_id => 2
                )
 
 History.create(:id => 18,
@@ -240,7 +258,8 @@ History.create(:id => 18,
                :customer_id => 2,
                :sales_category => 'クレーム処理',
                :sales_achievement => '失敗',
-               :detail => 'メモやん'
+               :detail => 'メモやん',
+               :staff_info_id => 1
                )
 
 History.create(:id => 19,
@@ -248,7 +267,8 @@ History.create(:id => 19,
                :customer_id => 4,
                :sales_category => 'クレーム処理',
                :sales_achievement => '達成',
-               :detail => 'メモたい'
+               :detail => 'メモたい',
+               :staff_info_id => 9
                )
 
 History.create(:id => 20,
@@ -256,7 +276,8 @@ History.create(:id => 20,
                :customer_id => 1,
                :sales_category => '商品案内',
                :sales_achievement => '継続',
-               :detail => 'メモやし'
+               :detail => 'メモやし',
+               :staff_info_id => 5
                )
 
 History.create(:id => 21,
@@ -264,7 +285,8 @@ History.create(:id => 21,
                :customer_id => 1,
                :sales_category => '商品紹介',
                :sales_achievement => '継続',
-               :detail => 'メモだよん'
+               :detail => 'メモだよん',
+               :staff_info_id => 7
                )
 
 History.create(:id => 22,
@@ -272,7 +294,8 @@ History.create(:id => 22,
                :customer_id => 4,
                :sales_category => '商品紹介',
                :sales_achievement => '達成',
-               :detail => 'メモです'
+               :detail => 'メモです',
+               :staff_info_id => 1
                )
 
 History.create(:id => 23,
@@ -280,7 +303,8 @@ History.create(:id => 23,
                :customer_id => 9,
                :sales_category => '契約',
                :sales_achievement => '達成',
-               :detail => 'メモじゃ'
+               :detail => 'メモじゃ',
+               :staff_info_id => 1
                )
 
 History.create(:id => 24,
@@ -288,7 +312,8 @@ History.create(:id => 24,
                :customer_id => 3,
                :sales_category => 'クレーム処理',
                :sales_achievement => '失敗',
-               :detail => 'メモかな？'
+               :detail => 'メモかな？',
+               :staff_info_id => 8
                )
 
 History.create(:id => 25,
@@ -296,7 +321,8 @@ History.create(:id => 25,
                :customer_id => 4,
                :sales_category => 'クレーム処理',
                :sales_achievement => '達成',
-               :detail => 'メモばい'
+               :detail => 'メモばい',
+               :staff_info_id => 3
                )
 
 History.create(:id => 26,
@@ -304,7 +330,8 @@ History.create(:id => 26,
                :customer_id => 10,
                :sales_category => '商品紹介',
                :sales_achievement => '継続',
-               :detail => 'メモやけん'
+               :detail => 'メモやけん',
+               :staff_info_id => 6
                )
 
 History.create(:id => 27,
@@ -312,7 +339,8 @@ History.create(:id => 27,
                :customer_id => 9,
                :sales_category => '契約',
                :sales_achievement => '失敗',
-               :detail => 'メモくさ'
+               :detail => 'メモくさ',
+               :staff_info_id => 4
                )
 
 History.create(:id => 28,
@@ -320,7 +348,8 @@ History.create(:id => 28,
                :customer_id => 10,
                :sales_category => 'クレーム処理',
                :sales_achievement => '継続',
-               :detail => 'メモやん'
+               :detail => 'メモやん',
+               :staff_info_id => 5
                )
 
 History.create(:id => 29,
@@ -328,7 +357,8 @@ History.create(:id => 29,
                :customer_id => 9,
                :sales_category => 'クレーム処理',
                :sales_achievement => '継続',
-               :detail => 'メモたい'
+               :detail => 'メモたい',
+               :staff_info_id => 8
                )
 
 History.create(:id => 30,
@@ -336,7 +366,8 @@ History.create(:id => 30,
                :customer_id => 1,
                :sales_category => '商品案内',
                :sales_achievement => '達成',
-               :detail => 'メモやし'
+               :detail => 'メモやし',
+               :staff_info_id => 4
                )
 
 History.create(:id => 31,
@@ -344,7 +375,8 @@ History.create(:id => 31,
                :customer_id => 7,
                :sales_category => '商品紹介',
                :sales_achievement => '達成',
-               :detail => 'メモだよん'
+               :detail => 'メモだよん',
+               :staff_info_id => 1
                )
 
 History.create(:id => 32,
@@ -352,7 +384,8 @@ History.create(:id => 32,
                :customer_id => 6,
                :sales_category => '商品紹介',
                :sales_achievement => '失敗',
-               :detail => 'メモです'
+               :detail => 'メモです',
+               :staff_info_id => 2
                )
 
 History.create(:id => 33,
@@ -360,7 +393,8 @@ History.create(:id => 33,
                :customer_id => 8,
                :sales_category => '契約',
                :sales_achievement => '達成',
-               :detail => 'メモじゃ'
+               :detail => 'メモじゃ',
+               :staff_info_id => 10
                )
 
 History.create(:id => 34,
@@ -368,7 +402,8 @@ History.create(:id => 34,
                :customer_id => 7,
                :sales_category => 'クレーム処理',
                :sales_achievement => '継続',
-               :detail => 'メモかな？'
+               :detail => 'メモかな？',
+               :staff_info_id => 6
                )
 
 History.create(:id => 35,
@@ -376,7 +411,8 @@ History.create(:id => 35,
                :customer_id => 2,
                :sales_category => 'クレーム処理',
                :sales_achievement => '継続',
-               :detail => 'メモばい'
+               :detail => 'メモばい',
+               :staff_info_id => 4
                )
 
 History.create(:id => 36,
@@ -384,7 +420,8 @@ History.create(:id => 36,
                :customer_id => 5,
                :sales_category => '商品紹介',
                :sales_achievement => '失敗',
-               :detail => 'メモやけん'
+               :detail => 'メモやけん',
+               :staff_info_id => 3
                )
 
 History.create(:id => 37,
@@ -392,7 +429,8 @@ History.create(:id => 37,
                :customer_id => 10,
                :sales_category => '契約',
                :sales_achievement => '達成',
-               :detail => 'メモくさ'
+               :detail => 'メモくさ',
+               :staff_info_id => 9
                )
 
 History.create(:id => 38,
@@ -400,7 +438,8 @@ History.create(:id => 38,
                :customer_id => 1,
                :sales_category => 'クレーム処理',
                :sales_achievement => '失敗',
-               :detail => 'メモやん'
+               :detail => 'メモやん',
+               :staff_info_id => 5
                )
 
 History.create(:id => 39,
@@ -408,7 +447,8 @@ History.create(:id => 39,
                :customer_id => 3,
                :sales_category => 'クレーム処理',
                :sales_achievement => '達成',
-               :detail => 'メモたい'
+               :detail => 'メモたい',
+               :staff_info_id => 1
                )
 
 History.create(:id => 40,
@@ -416,7 +456,8 @@ History.create(:id => 40,
                :customer_id => 10,
                :sales_category => '商品案内',
                :sales_achievement => '継続',
-               :detail => 'メモやし'
+               :detail => 'メモやし',
+               :staff_info_id => 3
                )
 
 History.create(:id => 41,
@@ -424,7 +465,8 @@ History.create(:id => 41,
                :customer_id => 6,
                :sales_category => '商品紹介',
                :sales_achievement => '継続',
-               :detail => 'メモだよん'
+               :detail => 'メモだよん',
+               :staff_info_id => 6
                )
 
 History.create(:id => 42,
@@ -432,7 +474,8 @@ History.create(:id => 42,
                :customer_id => 5,
                :sales_category => '商品紹介',
                :sales_achievement => '失敗',
-               :detail => 'メモです'
+               :detail => 'メモです',
+               :staff_info_id => 4
                )
 
 History.create(:id => 43,
@@ -440,7 +483,8 @@ History.create(:id => 43,
                :customer_id => 8,
                :sales_category => '契約',
                :sales_achievement => '達成',
-               :detail => 'メモじゃ'
+               :detail => 'メモじゃ',
+               :staff_info_id => 2
                )
 
 History.create(:id => 44,
@@ -448,7 +492,8 @@ History.create(:id => 44,
                :customer_id => 6,
                :sales_category => 'クレーム処理',
                :sales_achievement => '失敗',
-               :detail => 'メモかな？'
+               :detail => 'メモかな？',
+               :staff_info_id => 9
                )
 
 History.create(:id => 45,
@@ -456,7 +501,8 @@ History.create(:id => 45,
                :customer_id => 7,
                :sales_category => 'クレーム処理',
                :sales_achievement => '継続',
-               :detail => 'メモばい'
+               :detail => 'メモばい',
+               :staff_info_id => 10
                )
 
 History.create(:id => 46,
@@ -464,7 +510,8 @@ History.create(:id => 46,
                :customer_id => 3,
                :sales_category => '商品紹介',
                :sales_achievement => '達成',
-               :detail => 'メモやけん'
+               :detail => 'メモやけん',
+               :staff_info_id => 6
                )
 
 History.create(:id => 47,
@@ -472,7 +519,8 @@ History.create(:id => 47,
                :customer_id => 10,
                :sales_category => '契約',
                :sales_achievement => '継続',
-               :detail => 'メモくさ'
+               :detail => 'メモくさ',
+               :staff_info_id => 1
                )
 
 History.create(:id => 48,
@@ -480,7 +528,8 @@ History.create(:id => 48,
                :customer_id => 1,
                :sales_category => 'クレーム処理',
                :sales_achievement => '失敗',
-               :detail => 'メモやん'
+               :detail => 'メモやん',
+               :staff_info_id => 4
                )
 
 History.create(:id => 49,
@@ -488,7 +537,8 @@ History.create(:id => 49,
                :customer_id => 3,
                :sales_category => 'クレーム処理',
                :sales_achievement => '継続',
-               :detail => 'メモたい'
+               :detail => 'メモたい',
+               :staff_info_id => 3
                )
 
 History.create(:id => 50,
@@ -496,7 +546,8 @@ History.create(:id => 50,
                :customer_id => 2,
                :sales_category => '商品案内',
                :sales_achievement => '達成',
-               :detail => 'メモやし'
+               :detail => 'メモやし',
+               :staff_info_id => 1
                )
 
 History.create(:id => 51,
@@ -504,7 +555,8 @@ History.create(:id => 51,
                :customer_id => 6,
                :sales_category => '商品紹介',
                :sales_achievement => '継続',
-               :detail => 'メモだよん'
+               :detail => 'メモだよん',
+               :staff_info_id => 2
                )
 
 History.create(:id => 52,
@@ -512,7 +564,8 @@ History.create(:id => 52,
                :customer_id => 9,
                :sales_category => '商品紹介',
                :sales_achievement => '達成',
-               :detail => 'メモです'
+               :detail => 'メモです',
+               :staff_info_id => 9
                )
 
 History.create(:id => 53,
@@ -520,7 +573,8 @@ History.create(:id => 53,
                :customer_id => 3,
                :sales_category => '契約',
                :sales_achievement => '継続',
-               :detail => 'メモじゃ'
+               :detail => 'メモじゃ',
+               :staff_info_id => 10
                )
 
 History.create(:id => 54,
@@ -528,7 +582,8 @@ History.create(:id => 54,
                :customer_id => 8,
                :sales_category => 'クレーム処理',
                :sales_achievement => '失敗',
-               :detail => 'メモかな？'
+               :detail => 'メモかな？',
+               :staff_info_id => 3
                )
 
 History.create(:id => 55,
@@ -536,7 +591,8 @@ History.create(:id => 55,
                :customer_id => 1,
                :sales_category => 'クレーム処理',
                :sales_achievement => '達成',
-               :detail => 'メモばい'
+               :detail => 'メモばい',
+               :staff_info_id => 5
                )
 
 History.create(:id => 56,
@@ -544,7 +600,8 @@ History.create(:id => 56,
                :customer_id => 3,
                :sales_category => '商品紹介',
                :sales_achievement => '失敗',
-               :detail => 'メモやけん'
+               :detail => 'メモやけん',
+               :staff_info_id => 4
                )
 
 History.create(:id => 57,
@@ -552,7 +609,8 @@ History.create(:id => 57,
                :customer_id => 4,
                :sales_category => '契約',
                :sales_achievement => '失敗',
-               :detail => 'メモくさ'
+               :detail => 'メモくさ',
+               :staff_info_id => 2
                )
 
 History.create(:id => 58,
@@ -560,7 +618,8 @@ History.create(:id => 58,
                :customer_id => 6,
                :sales_category => 'クレーム処理',
                :sales_achievement => '継続',
-               :detail => 'メモやん'
+               :detail => 'メモやん',
+               :staff_info_id => 8
                )
 
 History.create(:id => 59,
@@ -568,7 +627,8 @@ History.create(:id => 59,
                :customer_id => 10,
                :sales_category => 'クレーム処理',
                :sales_achievement => '達成',
-               :detail => 'メモたい'
+               :detail => 'メモたい',
+               :staff_info_id => 2
                )
 
 History.create(:id => 60,
@@ -576,7 +636,8 @@ History.create(:id => 60,
                :customer_id => 5,
                :sales_category => '商品案内',
                :sales_achievement => '失敗',
-               :detail => 'メモやし'
+               :detail => 'メモやし',
+               :staff_info_id => 5
                )
 
 History.create(:id => 61,
@@ -584,7 +645,8 @@ History.create(:id => 61,
                :customer_id => 5,
                :sales_category => '商品紹介',
                :sales_achievement => '達成',
-               :detail => 'メモだよん'
+               :detail => 'メモだよん',
+               :staff_info_id => 6
                )
 
 History.create(:id => 62,
@@ -592,7 +654,8 @@ History.create(:id => 62,
                :customer_id => 6,
                :sales_category => '商品紹介',
                :sales_achievement => '継続',
-               :detail => 'メモです'
+               :detail => 'メモです',
+               :staff_info_id => 4
                )
 
 History.create(:id => 63,
@@ -600,7 +663,8 @@ History.create(:id => 63,
                :customer_id => 7,
                :sales_category => '契約',
                :sales_achievement => '失敗',
-               :detail => 'メモじゃ'
+               :detail => 'メモじゃ',
+               :staff_info_id => 2
                )
 
 History.create(:id => 64,
@@ -608,7 +672,8 @@ History.create(:id => 64,
                :customer_id => 3,
                :sales_category => 'クレーム処理',
                :sales_achievement => '達成',
-               :detail => 'メモかな？'
+               :detail => 'メモかな？',
+               :staff_info_id => 2
                )
 
 History.create(:id => 65,
@@ -616,7 +681,8 @@ History.create(:id => 65,
                :customer_id => 10,
                :sales_category => 'クレーム処理',
                :sales_achievement => '継続',
-               :detail => 'メモばい'
+               :detail => 'メモばい',
+               :staff_info_id => 1
                )
 
 History.create(:id => 66,
@@ -624,7 +690,8 @@ History.create(:id => 66,
                :customer_id => 9,
                :sales_category => '商品紹介',
                :sales_achievement => '達成',
-               :detail => 'メモやけん'
+               :detail => 'メモやけん',
+               :staff_info_id => 1
                )
 
 History.create(:id => 67,
@@ -632,7 +699,8 @@ History.create(:id => 67,
                :customer_id => 3,
                :sales_category => '契約',
                :sales_achievement => '達成',
-               :detail => 'メモくさ'
+               :detail => 'メモくさ',
+               :staff_info_id => 6
                )
 
 History.create(:id => 68,
@@ -640,7 +708,8 @@ History.create(:id => 68,
                :customer_id => 1,
                :sales_category => 'クレーム処理',
                :sales_achievement => '失敗',
-               :detail => 'メモやん'
+               :detail => 'メモやん',
+               :staff_info_id => 10
                )
 
 History.create(:id => 69,
@@ -648,7 +717,8 @@ History.create(:id => 69,
                :customer_id => 4,
                :sales_category => 'クレーム処理',
                :sales_achievement => '継続',
-               :detail => 'メモたい'
+               :detail => 'メモたい',
+               :staff_info_id => 5
                )
 
 History.create(:id => 70,
@@ -656,7 +726,8 @@ History.create(:id => 70,
                :customer_id => 2,
                :sales_category => '商品案内',
                :sales_achievement => '達成',
-               :detail => 'メモやし'
+               :detail => 'メモやし',
+               :staff_info_id => 6
                )
 
 History.create(:id => 71,
@@ -664,7 +735,8 @@ History.create(:id => 71,
                :customer_id => 1,
                :sales_category => '商品紹介',
                :sales_achievement => '達成',
-               :detail => 'メモだよん'
+               :detail => 'メモだよん',
+               :staff_info_id => 3
                )
 
 History.create(:id => 72,
@@ -672,7 +744,8 @@ History.create(:id => 72,
                :customer_id => 4,
                :sales_category => '商品紹介',
                :sales_achievement => '継続',
-               :detail => 'メモです'
+               :detail => 'メモです',
+               :staff_info_id => 2
                )
 
 History.create(:id => 73,
@@ -680,7 +753,8 @@ History.create(:id => 73,
                :customer_id => 9,
                :sales_category => '契約',
                :sales_achievement => '失敗',
-               :detail => 'メモじゃ'
+               :detail => 'メモじゃ',
+               :staff_info_id => 4
                )
 
 History.create(:id => 74,
@@ -688,7 +762,8 @@ History.create(:id => 74,
                :customer_id => 7,
                :sales_category => 'クレーム処理',
                :sales_achievement => '達成',
-               :detail => 'メモかな？'
+               :detail => 'メモかな？',
+               :staff_info_id => 4
                )
 
 History.create(:id => 75,
@@ -696,7 +771,8 @@ History.create(:id => 75,
                :customer_id => 3,
                :sales_category => 'クレーム処理',
                :sales_achievement => '継続',
-               :detail => 'メモばい'
+               :detail => 'メモばい',
+               :staff_info_id => 8
                )
 
 History.create(:id => 76,
@@ -704,7 +780,8 @@ History.create(:id => 76,
                :customer_id => 1,
                :sales_category => '商品紹介',
                :sales_achievement => '達成',
-               :detail => 'メモやけん'
+               :detail => 'メモやけん',
+               :staff_info_id => 7
                )
 
 History.create(:id => 77,
@@ -712,7 +789,8 @@ History.create(:id => 77,
                :customer_id => 5,
                :sales_category => '契約',
                :sales_achievement => '達成',
-               :detail => 'メモくさ'
+               :detail => 'メモくさ',
+               :staff_info_id => 1
                )
 
 History.create(:id => 78,
@@ -720,7 +798,8 @@ History.create(:id => 78,
                :customer_id => 3,
                :sales_category => 'クレーム処理',
                :sales_achievement => '失敗',
-               :detail => 'メモやん'
+               :detail => 'メモやん',
+               :staff_info_id => 9
                )
 
 History.create(:id => 79,
@@ -728,7 +807,8 @@ History.create(:id => 79,
                :customer_id => 8,
                :sales_category => 'クレーム処理',
                :sales_achievement => '継続',
-               :detail => 'メモたい'
+               :detail => 'メモたい',
+               :staff_info_id => 7
                )
 
 History.create(:id => 80,
@@ -736,7 +816,8 @@ History.create(:id => 80,
                :customer_id => 10,
                :sales_category => '商品案内',
                :sales_achievement => '達成',
-               :detail => 'メモやし'
+               :detail => 'メモやし',
+               :staff_info_id => 6
                )
 
 History.create(:id => 81,
@@ -744,7 +825,8 @@ History.create(:id => 81,
                :customer_id => 4,
                :sales_category => '契約',
                :sales_achievement => '失敗',
-               :detail => 'メモだよん'
+               :detail => 'メモだよん',
+               :staff_info_id => 8
                )
 
 History.create(:id => 82,
@@ -752,7 +834,8 @@ History.create(:id => 82,
                :customer_id => 2,
                :sales_category => '商品紹介',
                :sales_achievement => '継続',
-               :detail => 'メモです'
+               :detail => 'メモです',
+               :staff_info_id => 9
                )
 
 History.create(:id => 83,
@@ -760,7 +843,8 @@ History.create(:id => 83,
                :customer_id => 5,
                :sales_category => '商品紹介',
                :sales_achievement => '失敗',
-               :detail => 'メモじゃ'
+               :detail => 'メモじゃ',
+               :staff_info_id => 3
                )
 
 History.create(:id => 84,
@@ -768,7 +852,8 @@ History.create(:id => 84,
                :customer_id => 3,
                :sales_category => 'クレーム処理',
                :sales_achievement => '達成',
-               :detail => 'メモかな？'
+               :detail => 'メモかな？',
+               :staff_info_id => 4
                )
 
 History.create(:id => 85,
@@ -776,7 +861,8 @@ History.create(:id => 85,
                :customer_id => 10,
                :sales_category => '契約',
                :sales_achievement => '継続',
-               :detail => 'メモばい'
+               :detail => 'メモばい',
+               :staff_info_id => 6
                )
 
 History.create(:id => 86,
@@ -784,7 +870,8 @@ History.create(:id => 86,
                :customer_id => 8,
                :sales_category => 'クレーム処理',
                :sales_achievement => '達成',
-               :detail => 'メモやけん'
+               :detail => 'メモやけん',
+               :staff_info_id => 9
                )
 
 History.create(:id => 87,
@@ -792,7 +879,8 @@ History.create(:id => 87,
                :customer_id => 9,
                :sales_category => '契約',
                :sales_achievement => '達成',
-               :detail => 'メモくさ'
+               :detail => 'メモくさ',
+               :staff_info_id => 1
                )
 
 History.create(:id => 88,
@@ -800,7 +888,8 @@ History.create(:id => 88,
                :customer_id => 7,
                :sales_category => '商品紹介',
                :sales_achievement => '継続',
-               :detail => 'メモやん'
+               :detail => 'メモやん',
+               :staff_info_id => 6
                )
 
 History.create(:id => 89,
@@ -808,7 +897,8 @@ History.create(:id => 89,
                :customer_id => 6,
                :sales_category => 'クレーム処理',
                :sales_achievement => '継続',
-               :detail => 'メモたい'
+               :detail => 'メモたい',
+               :staff_info_id => 5
                )
 
 History.create(:id => 90,
@@ -816,7 +906,8 @@ History.create(:id => 90,
                :customer_id => 1,
                :sales_category => '商品案内',
                :sales_achievement => '失敗',
-               :detail => 'メモやし'
+               :detail => 'メモやし',
+               :staff_info_id => 3
                )
 
 History.create(:id => 91,
@@ -824,7 +915,8 @@ History.create(:id => 91,
                :customer_id => 1,
                :sales_category => '商品案内',
                :sales_achievement => '達成',
-               :detail => '北斗神拳の奥義本を提案し商談成立'
+               :detail => '北斗神拳の奥義本を提案し商談成立',
+               :staff_info_id => 1
                )
 
 History.create(:id => 92,
@@ -832,7 +924,8 @@ History.create(:id => 92,
                :customer_id => 2,
                :sales_category => '契約',
                :sales_achievement => '継続',
-               :detail => 'フェイスカバーを提案'
+               :detail => 'フェイスカバーを提案',
+               :staff_info_id => 2
                )
 
 History.create(:id => 93,
@@ -840,7 +933,8 @@ History.create(:id => 93,
                :customer_id => 3,
                :sales_category => 'クレーム処理',
                :sales_achievement => '失敗',
-               :detail => '究極のメニューが進まない'
+               :detail => '究極のメニューが進まない',
+               :staff_info_id => 3
                )
 
 History.create(:id => 94,
@@ -848,7 +942,8 @@ History.create(:id => 94,
                :customer_id => 4,
                :sales_category => '契約',
                :sales_achievement => '達成',
-               :detail => '福岡ガイド本共同出版提案し商談成立'
+               :detail => '福岡ガイド本共同出版提案し商談成立',
+               :staff_info_id => 4
                )
 
 History.create(:id => 95,
@@ -856,7 +951,8 @@ History.create(:id => 95,
                :customer_id => 5,
                :sales_category => '契約',
                :sales_achievement => '継続',
-               :detail => 'ノックバットの納品価格交渉中'
+               :detail => 'ノックバットの納品価格交渉中',
+               :staff_info_id => 5
                )
 
 History.create(:id => 96,
@@ -864,7 +960,8 @@ History.create(:id => 96,
                :customer_id => 6,
                :sales_category => 'クレーム処理',
                :sales_achievement => '継続',
-               :detail => 'オヤシロ様が後ろにいるとのことで特効薬を紹介'
+               :detail => 'オヤシロ様が後ろにいるとのことで特効薬を紹介',
+               :staff_info_id => 6
                )
 
 History.create(:id => 97,
@@ -872,7 +969,8 @@ History.create(:id => 97,
                :customer_id => 7,
                :sales_category => '商品案内',
                :sales_achievement => '継続',
-               :detail => 'お墓に添える造花の納品価格交渉中'
+               :detail => 'お墓に添える造花の納品価格交渉中',
+               :staff_info_id => 7
                )
 
 History.create(:id => 98,
@@ -880,7 +978,8 @@ History.create(:id => 98,
                :customer_id => 8,
                :sales_category => '契約',
                :sales_achievement => '達成',
-               :detail => 'CD販売の単独契約交渉成立'
+               :detail => 'CD販売の単独契約交渉成立',
+               :staff_info_id => 8
                )
 
 History.create(:id => 99,
@@ -888,7 +987,8 @@ History.create(:id => 99,
                :customer_id => 9,
                :sales_category => 'クレーム処理',
                :sales_achievement => '継続',
-               :detail => '息子が峠でドリフトする'
+               :detail => '息子が峠でドリフトする',
+               :staff_info_id => 9
                )
 
 History.create(:id => 100,
@@ -896,5 +996,6 @@ History.create(:id => 100,
                :customer_id => 10,
                :sales_category => '商品案内',
                :sales_achievement => '失敗',
-               :detail => '赤い染髪料は不要とのこと'
+               :detail => '赤い染髪料は不要とのこと',
+               :staff_info_id => 10
                )

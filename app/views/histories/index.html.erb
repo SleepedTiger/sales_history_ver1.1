@@ -9,6 +9,7 @@
       <th>会社名</th>
       <th>営業区分</th>
       <th>営業成果</th>
+      <th>営業担当者名</th>
       <th>詳細</th>
       <th colspan="3"></th>
     </tr>
@@ -18,9 +19,10 @@
     <% @histories.each do |history| %>
       <tr>
         <td><%= history.activity_time %></td>
-        <td><%= history.customer %></td>
+        <td><%= history.customer.company_name %></td>
         <td><%= history.sales_category %></td>
         <td><%= history.sales_achievement %></td>
+        <td><%= history.staff_info.name %></td>
         <td><%= history.detail %></td>
         <td><%= link_to '参照', history %></td>
         <td><%= link_to '編集', edit_history_path(history) %></td>
