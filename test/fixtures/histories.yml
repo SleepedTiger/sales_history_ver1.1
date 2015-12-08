@@ -10,10 +10,12 @@
 #  detail            :text
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
+#  staff_info_id     :integer
 #
 # Indexes
 #
-#  index_histories_on_customer_id  (customer_id)
+#  index_histories_on_customer_id    (customer_id)
+#  index_histories_on_staff_info_id  (staff_info_id)
 #
 
 one:
