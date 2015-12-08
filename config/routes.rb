@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "graph" => "sales_graph#show"
   resources :staff_infos
   resources :histories
   resources :customers
