@@ -66,29 +66,835 @@ Customer.create(:id => 5,
                 :address => '佐賀県佐賀市柳町5-11-11',
                 :tel => '092-144-511',
                 :responsible_name => '鳩ヶ谷')
+Customer.create(:id => 6,
+                :company_name => '雛見沢町役場',
+                :zip => '355-0015',
+                :address => '岐阜県雛見沢群大字雛見沢1350-5',
+                :tel => '0546-25-368',
+                :responsible_name => '園崎')
+Customer.create(:id => 7,
+                :company_name => '明青学園',
+                :zip => '310-0018',
+                :address => '東京都港区六本木2-5-8',
+                :tel => '03-544-7295',
+                :responsible_name => '上杉')
+Customer.create(:id => 8,
+                :company_name => '音ノ木坂学院',
+                :zip => '813-0016',
+                :address => '福岡県福岡市東区香椎浜3-9-15',
+                :tel => '092-269-468',
+                :responsible_name => '絢瀬')
+Customer.create(:id => 9,
+                :company_name => '藤原豆腐店',
+                :zip => '213-0192',
+                :address => '茨城県水戸市水戸2-5-9',
+                :tel => '046-213-655',
+                :responsible_name => '藤原')
+Customer.create(:id => 10,
+                :company_name => '湘北高校',
+                :zip => '522-0018',
+                :address => '神奈川県横浜市港南区帆若羅裸2-5-3',
+                :tel => '059-258-467',
+                :responsible_name => '桜木')
 
 History.delete_all
 
 History.create(:id => 1,
-               :activity_time => DateTime.new(1993,2,24,12,30,45),
+               :activity_time => DateTime.new(2015,8,2,12,30,45),
                :customer_id => 1,
                :sales_category => '商品案内',
                :sales_achievement => '達成',
-               :detail => '北斗神拳の奥義本を提案',
+               :detail => '北斗神拳の奥義本を提案し商談成立'
                )
 
 History.create(:id => 2,
-               :activity_time => DateTime.new(1993,2,24,12,30,45),
+               :activity_time => DateTime.new(2015,8,5,15,30,45),
                :customer_id => 2,
                :sales_category => '契約',
                :sales_achievement => '継続',
-               :detail => 'フェイスカバーを提案',
+               :detail => 'フェイスカバーを提案'
                )
 
 History.create(:id => 3,
-               :activity_time => DateTime.new(1993,2,24,12,30,45),
+               :activity_time => DateTime.new(2015,8,10,10,30,45),
                :customer_id => 3,
                :sales_category => 'クレーム処理',
                :sales_achievement => '失敗',
-               :detail => '究極のメニューが進まない',
+               :detail => '究極のメニューが進まない'
+               )
+
+History.create(:id => 4,
+               :activity_time => DateTime.new(2015,8,10,14,35,45),
+               :customer_id => 4,
+               :sales_category => '契約',
+               :sales_achievement => '達成',
+               :detail => '福岡ガイド本共同出版提案し商談成立'
+               )
+
+History.create(:id => 5,
+               :activity_time => DateTime.new(2015,8,11,18,12,45),
+               :customer_id => 5,
+               :sales_category => '契約',
+               :sales_achievement => '継続',
+               :detail => 'ノックバットの納品価格交渉中'
+               )
+
+History.create(:id => 6,
+               :activity_time => DateTime.new(2015,8,12,18,41,12),
+               :customer_id => 6,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '継続',
+               :detail => 'オヤシロ様が後ろにいるとのことで特効薬を紹介'
+               )
+
+History.create(:id => 7,
+               :activity_time => DateTime.new(2015,8,16,09,41,12),
+               :customer_id => 7,
+               :sales_category => '商品案内',
+               :sales_achievement => '継続',
+               :detail => 'お墓に添える造花の納品価格交渉中'
+               )
+
+History.create(:id => 8,
+               :activity_time => DateTime.new(2015,8,17,10,43,12),
+               :customer_id => 8,
+               :sales_category => '契約',
+               :sales_achievement => '達成',
+               :detail => 'CD販売の単独契約交渉成立'
+               )
+
+History.create(:id => 9,
+               :activity_time => DateTime.new(2015,8,18,11,13,49),
+               :customer_id => 9,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '継続',
+               :detail => '息子が峠でドリフトする'
+               )
+
+History.create(:id => 10,
+               :activity_time => DateTime.new(2015,8,19,17,13,49),
+               :customer_id => 10,
+               :sales_category => '商品案内',
+               :sales_achievement => '失敗',
+               :detail => '赤い染髪料は不要とのこと'
+               )
+
+History.create(:id => 11,
+               :activity_time => DateTime.new(2015,8,21,12,30,45),
+               :customer_id => 5,
+               :sales_category => '商品紹介',
+               :sales_achievement => '継続',
+               :detail => 'メモだよん'
+               )
+
+History.create(:id => 12,
+               :activity_time => DateTime.new(2015,8,21,15,30,45),
+               :customer_id => 9,
+               :sales_category => '商品紹介',
+               :sales_achievement => '失敗',
+               :detail => 'メモです'
+               )
+
+History.create(:id => 13,
+               :activity_time => DateTime.new(2015,8,22,10,30,45),
+               :customer_id => 10,
+               :sales_category => '契約',
+               :sales_achievement => '失敗',
+               :detail => 'メモじゃ'
+               )
+
+History.create(:id => 14,
+               :activity_time => DateTime.new(2015,8,22,14,35,45),
+               :customer_id => 1,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '達成',
+               :detail => 'メモかな？'
+               )
+
+History.create(:id => 15,
+               :activity_time => DateTime.new(2015,8,22,18,12,45),
+               :customer_id => 5,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '継続',
+               :detail => 'メモばい'
+               )
+
+History.create(:id => 16,
+               :activity_time => DateTime.new(2015,8,23,18,41,12),
+               :customer_id => 9,
+               :sales_category => '商品紹介',
+               :sales_achievement => '継続',
+               :detail => 'メモやけん'
+               )
+
+History.create(:id => 17,
+               :activity_time => DateTime.new(2015,8,25,09,41,12),
+               :customer_id => 7,
+               :sales_category => '契約',
+               :sales_achievement => '達成',
+               :detail => 'メモくさ'
+               )
+
+History.create(:id => 18,
+               :activity_time => DateTime.new(2015,8,25,10,43,12),
+               :customer_id => 2,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '失敗',
+               :detail => 'メモやん'
+               )
+
+History.create(:id => 19,
+               :activity_time => DateTime.new(2015,8,28,11,13,49),
+               :customer_id => 4,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '達成',
+               :detail => 'メモたい'
+               )
+
+History.create(:id => 20,
+               :activity_time => DateTime.new(2015,8,31,17,13,49),
+               :customer_id => 1,
+               :sales_category => '商品案内',
+               :sales_achievement => '継続',
+               :detail => 'メモやし'
+               )
+
+History.create(:id => 21,
+               :activity_time => DateTime.new(2015,9,1,12,30,45),
+               :customer_id => 1,
+               :sales_category => '商品紹介',
+               :sales_achievement => '継続',
+               :detail => 'メモだよん'
+               )
+
+History.create(:id => 22,
+               :activity_time => DateTime.new(2015,9,1,15,30,45),
+               :customer_id => 4,
+               :sales_category => '商品紹介',
+               :sales_achievement => '達成',
+               :detail => 'メモです'
+               )
+
+History.create(:id => 23,
+               :activity_time => DateTime.new(2015,9,2,10,30,45),
+               :customer_id => 9,
+               :sales_category => '契約',
+               :sales_achievement => '達成',
+               :detail => 'メモじゃ'
+               )
+
+History.create(:id => 24,
+               :activity_time => DateTime.new(2015,9,2,14,35,45),
+               :customer_id => 3,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '失敗',
+               :detail => 'メモかな？'
+               )
+
+History.create(:id => 25,
+               :activity_time => DateTime.new(2015,9,2,18,12,45),
+               :customer_id => 4,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '達成',
+               :detail => 'メモばい'
+               )
+
+History.create(:id => 26,
+               :activity_time => DateTime.new(2015,9,3,18,41,12),
+               :customer_id => 10,
+               :sales_category => '商品紹介',
+               :sales_achievement => '継続',
+               :detail => 'メモやけん'
+               )
+
+History.create(:id => 27,
+               :activity_time => DateTime.new(2015,9,5,09,41,12),
+               :customer_id => 9,
+               :sales_category => '契約',
+               :sales_achievement => '失敗',
+               :detail => 'メモくさ'
+               )
+
+History.create(:id => 28,
+               :activity_time => DateTime.new(2015,9,5,10,43,12),
+               :customer_id => 10,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '継続',
+               :detail => 'メモやん'
+               )
+
+History.create(:id => 29,
+               :activity_time => DateTime.new(2015,9,8,11,13,49),
+               :customer_id => 9,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '継続',
+               :detail => 'メモたい'
+               )
+
+History.create(:id => 30,
+               :activity_time => DateTime.new(2015,9,10,17,13,49),
+               :customer_id => 1,
+               :sales_category => '商品案内',
+               :sales_achievement => '達成',
+               :detail => 'メモやし'
+               )
+
+History.create(:id => 31,
+               :activity_time => DateTime.new(2015,9,11,12,30,45),
+               :customer_id => 7,
+               :sales_category => '商品紹介',
+               :sales_achievement => '達成',
+               :detail => 'メモだよん'
+               )
+
+History.create(:id => 32,
+               :activity_time => DateTime.new(2015,9,11,15,30,45),
+               :customer_id => 6,
+               :sales_category => '商品紹介',
+               :sales_achievement => '失敗',
+               :detail => 'メモです'
+               )
+
+History.create(:id => 33,
+               :activity_time => DateTime.new(2015,9,12,10,30,45),
+               :customer_id => 8,
+               :sales_category => '契約',
+               :sales_achievement => '達成',
+               :detail => 'メモじゃ'
+               )
+
+History.create(:id => 34,
+               :activity_time => DateTime.new(2015,9,12,14,35,45),
+               :customer_id => 7,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '継続',
+               :detail => 'メモかな？'
+               )
+
+History.create(:id => 35,
+               :activity_time => DateTime.new(2015,9,12,18,12,45),
+               :customer_id => 2,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '継続',
+               :detail => 'メモばい'
+               )
+
+History.create(:id => 36,
+               :activity_time => DateTime.new(2015,9,13,18,41,12),
+               :customer_id => 5,
+               :sales_category => '商品紹介',
+               :sales_achievement => '失敗',
+               :detail => 'メモやけん'
+               )
+
+History.create(:id => 37,
+               :activity_time => DateTime.new(2015,9,15,09,41,12),
+               :customer_id => 10,
+               :sales_category => '契約',
+               :sales_achievement => '達成',
+               :detail => 'メモくさ'
+               )
+
+History.create(:id => 38,
+               :activity_time => DateTime.new(2015,9,15,10,43,12),
+               :customer_id => 1,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '失敗',
+               :detail => 'メモやん'
+               )
+
+History.create(:id => 39,
+               :activity_time => DateTime.new(2015,9,18,11,13,49),
+               :customer_id => 3,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '達成',
+               :detail => 'メモたい'
+               )
+
+History.create(:id => 40,
+               :activity_time => DateTime.new(2015,9,20,17,13,49),
+               :customer_id => 10,
+               :sales_category => '商品案内',
+               :sales_achievement => '継続',
+               :detail => 'メモやし'
+               )
+
+History.create(:id => 41,
+               :activity_time => DateTime.new(2015,9,21,12,30,45),
+               :customer_id => 6,
+               :sales_category => '商品紹介',
+               :sales_achievement => '継続',
+               :detail => 'メモだよん'
+               )
+
+History.create(:id => 42,
+               :activity_time => DateTime.new(2015,9,21,15,30,45),
+               :customer_id => 5,
+               :sales_category => '商品紹介',
+               :sales_achievement => '失敗',
+               :detail => 'メモです'
+               )
+
+History.create(:id => 43,
+               :activity_time => DateTime.new(2015,9,22,10,30,45),
+               :customer_id => 8,
+               :sales_category => '契約',
+               :sales_achievement => '達成',
+               :detail => 'メモじゃ'
+               )
+
+History.create(:id => 44,
+               :activity_time => DateTime.new(2015,9,22,14,35,45),
+               :customer_id => 6,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '失敗',
+               :detail => 'メモかな？'
+               )
+
+History.create(:id => 45,
+               :activity_time => DateTime.new(2015,9,22,18,12,45),
+               :customer_id => 7,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '継続',
+               :detail => 'メモばい'
+               )
+
+History.create(:id => 46,
+               :activity_time => DateTime.new(2015,9,23,18,41,12),
+               :customer_id => 3,
+               :sales_category => '商品紹介',
+               :sales_achievement => '達成',
+               :detail => 'メモやけん'
+               )
+
+History.create(:id => 47,
+               :activity_time => DateTime.new(2015,9,25,09,41,12),
+               :customer_id => 10,
+               :sales_category => '契約',
+               :sales_achievement => '継続',
+               :detail => 'メモくさ'
+               )
+
+History.create(:id => 48,
+               :activity_time => DateTime.new(2015,9,25,10,43,12),
+               :customer_id => 1,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '失敗',
+               :detail => 'メモやん'
+               )
+
+History.create(:id => 49,
+               :activity_time => DateTime.new(2015,9,28,11,13,49),
+               :customer_id => 3,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '継続',
+               :detail => 'メモたい'
+               )
+
+History.create(:id => 50,
+               :activity_time => DateTime.new(2015,9,30,17,13,49),
+               :customer_id => 2,
+               :sales_category => '商品案内',
+               :sales_achievement => '達成',
+               :detail => 'メモやし'
+               )
+
+History.create(:id => 51,
+               :activity_time => DateTime.new(2015,10,1,12,30,45),
+               :customer_id => 6,
+               :sales_category => '商品紹介',
+               :sales_achievement => '継続',
+               :detail => 'メモだよん'
+               )
+
+History.create(:id => 52,
+               :activity_time => DateTime.new(2015,10,3,15,30,45),
+               :customer_id => 9,
+               :sales_category => '商品紹介',
+               :sales_achievement => '達成',
+               :detail => 'メモです'
+               )
+
+History.create(:id => 53,
+               :activity_time => DateTime.new(2015,10,5,10,30,45),
+               :customer_id => 3,
+               :sales_category => '契約',
+               :sales_achievement => '継続',
+               :detail => 'メモじゃ'
+               )
+
+History.create(:id => 54,
+               :activity_time => DateTime.new(2015,10,5,14,35,45),
+               :customer_id => 8,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '失敗',
+               :detail => 'メモかな？'
+               )
+
+History.create(:id => 55,
+               :activity_time => DateTime.new(2015,10,7,18,12,45),
+               :customer_id => 1,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '達成',
+               :detail => 'メモばい'
+               )
+
+History.create(:id => 56,
+               :activity_time => DateTime.new(2015,10,10,18,41,12),
+               :customer_id => 3,
+               :sales_category => '商品紹介',
+               :sales_achievement => '失敗',
+               :detail => 'メモやけん'
+               )
+
+History.create(:id => 57,
+               :activity_time => DateTime.new(2015,10,12,09,41,12),
+               :customer_id => 4,
+               :sales_category => '契約',
+               :sales_achievement => '失敗',
+               :detail => 'メモくさ'
+               )
+
+History.create(:id => 58,
+               :activity_time => DateTime.new(2015,10,13,10,43,12),
+               :customer_id => 6,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '継続',
+               :detail => 'メモやん'
+               )
+
+History.create(:id => 59,
+               :activity_time => DateTime.new(2015,10,13,11,13,49),
+               :customer_id => 10,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '達成',
+               :detail => 'メモたい'
+               )
+
+History.create(:id => 60,
+               :activity_time => DateTime.new(2015,10,14,17,13,49),
+               :customer_id => 5,
+               :sales_category => '商品案内',
+               :sales_achievement => '失敗',
+               :detail => 'メモやし'
+               )
+
+History.create(:id => 61,
+               :activity_time => DateTime.new(2015,10,15,12,30,45),
+               :customer_id => 5,
+               :sales_category => '商品紹介',
+               :sales_achievement => '達成',
+               :detail => 'メモだよん'
+               )
+
+History.create(:id => 62,
+               :activity_time => DateTime.new(2015,10,18,15,30,45),
+               :customer_id => 6,
+               :sales_category => '商品紹介',
+               :sales_achievement => '継続',
+               :detail => 'メモです'
+               )
+
+History.create(:id => 63,
+               :activity_time => DateTime.new(2015,10,20,10,30,45),
+               :customer_id => 7,
+               :sales_category => '契約',
+               :sales_achievement => '失敗',
+               :detail => 'メモじゃ'
+               )
+
+History.create(:id => 64,
+               :activity_time => DateTime.new(2015,10,22,14,35,45),
+               :customer_id => 3,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '達成',
+               :detail => 'メモかな？'
+               )
+
+History.create(:id => 65,
+               :activity_time => DateTime.new(2015,10,23,18,12,45),
+               :customer_id => 10,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '継続',
+               :detail => 'メモばい'
+               )
+
+History.create(:id => 66,
+               :activity_time => DateTime.new(2015,10,23,18,41,12),
+               :customer_id => 9,
+               :sales_category => '商品紹介',
+               :sales_achievement => '達成',
+               :detail => 'メモやけん'
+               )
+
+History.create(:id => 67,
+               :activity_time => DateTime.new(2015,10,25,09,41,12),
+               :customer_id => 3,
+               :sales_category => '契約',
+               :sales_achievement => '達成',
+               :detail => 'メモくさ'
+               )
+
+History.create(:id => 68,
+               :activity_time => DateTime.new(2015,10,29,10,43,12),
+               :customer_id => 1,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '失敗',
+               :detail => 'メモやん'
+               )
+
+History.create(:id => 69,
+               :activity_time => DateTime.new(2015,10,30,11,13,49),
+               :customer_id => 4,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '継続',
+               :detail => 'メモたい'
+               )
+
+History.create(:id => 70,
+               :activity_time => DateTime.new(2015,10,30,17,13,49),
+               :customer_id => 2,
+               :sales_category => '商品案内',
+               :sales_achievement => '達成',
+               :detail => 'メモやし'
+               )
+
+History.create(:id => 71,
+               :activity_time => DateTime.new(2015,11,2,12,30,45),
+               :customer_id => 1,
+               :sales_category => '商品紹介',
+               :sales_achievement => '達成',
+               :detail => 'メモだよん'
+               )
+
+History.create(:id => 72,
+               :activity_time => DateTime.new(2015,11,2,15,30,45),
+               :customer_id => 4,
+               :sales_category => '商品紹介',
+               :sales_achievement => '継続',
+               :detail => 'メモです'
+               )
+
+History.create(:id => 73,
+               :activity_time => DateTime.new(2015,11,3,10,30,45),
+               :customer_id => 9,
+               :sales_category => '契約',
+               :sales_achievement => '失敗',
+               :detail => 'メモじゃ'
+               )
+
+History.create(:id => 74,
+               :activity_time => DateTime.new(2015,11,4,14,35,45),
+               :customer_id => 7,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '達成',
+               :detail => 'メモかな？'
+               )
+
+History.create(:id => 75,
+               :activity_time => DateTime.new(2015,11,6,18,12,45),
+               :customer_id => 3,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '継続',
+               :detail => 'メモばい'
+               )
+
+History.create(:id => 76,
+               :activity_time => DateTime.new(2015,11,6,18,41,12),
+               :customer_id => 1,
+               :sales_category => '商品紹介',
+               :sales_achievement => '達成',
+               :detail => 'メモやけん'
+               )
+
+History.create(:id => 77,
+               :activity_time => DateTime.new(2015,11,8,09,41,12),
+               :customer_id => 5,
+               :sales_category => '契約',
+               :sales_achievement => '達成',
+               :detail => 'メモくさ'
+               )
+
+History.create(:id => 78,
+               :activity_time => DateTime.new(2015,11,8,10,43,12),
+               :customer_id => 3,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '失敗',
+               :detail => 'メモやん'
+               )
+
+History.create(:id => 79,
+               :activity_time => DateTime.new(2015,11,9,11,13,49),
+               :customer_id => 8,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '継続',
+               :detail => 'メモたい'
+               )
+
+History.create(:id => 80,
+               :activity_time => DateTime.new(2015,11,11,17,13,49),
+               :customer_id => 10,
+               :sales_category => '商品案内',
+               :sales_achievement => '達成',
+               :detail => 'メモやし'
+               )
+
+History.create(:id => 81,
+               :activity_time => DateTime.new(2015,11,12,12,30,45),
+               :customer_id => 4,
+               :sales_category => '契約',
+               :sales_achievement => '失敗',
+               :detail => 'メモだよん'
+               )
+
+History.create(:id => 82,
+               :activity_time => DateTime.new(2015,11,13,15,30,45),
+               :customer_id => 2,
+               :sales_category => '商品紹介',
+               :sales_achievement => '継続',
+               :detail => 'メモです'
+               )
+
+History.create(:id => 83,
+               :activity_time => DateTime.new(2015,11,15,10,30,45),
+               :customer_id => 5,
+               :sales_category => '商品紹介',
+               :sales_achievement => '失敗',
+               :detail => 'メモじゃ'
+               )
+
+History.create(:id => 84,
+               :activity_time => DateTime.new(2015,11,17,14,35,45),
+               :customer_id => 3,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '達成',
+               :detail => 'メモかな？'
+               )
+
+History.create(:id => 85,
+               :activity_time => DateTime.new(2015,11,21,18,12,45),
+               :customer_id => 10,
+               :sales_category => '契約',
+               :sales_achievement => '継続',
+               :detail => 'メモばい'
+               )
+
+History.create(:id => 86,
+               :activity_time => DateTime.new(2015,11,22,18,41,12),
+               :customer_id => 8,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '達成',
+               :detail => 'メモやけん'
+               )
+
+History.create(:id => 87,
+               :activity_time => DateTime.new(2015,11,23,09,41,12),
+               :customer_id => 9,
+               :sales_category => '契約',
+               :sales_achievement => '達成',
+               :detail => 'メモくさ'
+               )
+
+History.create(:id => 88,
+               :activity_time => DateTime.new(2015,11,25,10,43,12),
+               :customer_id => 7,
+               :sales_category => '商品紹介',
+               :sales_achievement => '継続',
+               :detail => 'メモやん'
+               )
+
+History.create(:id => 89,
+               :activity_time => DateTime.new(2015,11,27,11,13,49),
+               :customer_id => 6,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '継続',
+               :detail => 'メモたい'
+               )
+
+History.create(:id => 90,
+               :activity_time => DateTime.new(2015,11,29,17,13,49),
+               :customer_id => 1,
+               :sales_category => '商品案内',
+               :sales_achievement => '失敗',
+               :detail => 'メモやし'
+               )
+
+History.create(:id => 91,
+               :activity_time => DateTime.new(2015,12,1,12,30,45),
+               :customer_id => 1,
+               :sales_category => '商品案内',
+               :sales_achievement => '達成',
+               :detail => '北斗神拳の奥義本を提案し商談成立'
+               )
+
+History.create(:id => 92,
+               :activity_time => DateTime.new(2015,12,2,15,30,45),
+               :customer_id => 2,
+               :sales_category => '契約',
+               :sales_achievement => '継続',
+               :detail => 'フェイスカバーを提案'
+               )
+
+History.create(:id => 93,
+               :activity_time => DateTime.new(2015,12,3,10,30,45),
+               :customer_id => 3,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '失敗',
+               :detail => '究極のメニューが進まない'
+               )
+
+History.create(:id => 94,
+               :activity_time => DateTime.new(2015,12,3,14,35,45),
+               :customer_id => 4,
+               :sales_category => '契約',
+               :sales_achievement => '達成',
+               :detail => '福岡ガイド本共同出版提案し商談成立'
+               )
+
+History.create(:id => 95,
+               :activity_time => DateTime.new(2015,12,4,18,12,45),
+               :customer_id => 5,
+               :sales_category => '契約',
+               :sales_achievement => '継続',
+               :detail => 'ノックバットの納品価格交渉中'
+               )
+
+History.create(:id => 96,
+               :activity_time => DateTime.new(2015,12,5,18,41,12),
+               :customer_id => 6,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '継続',
+               :detail => 'オヤシロ様が後ろにいるとのことで特効薬を紹介'
+               )
+
+History.create(:id => 97,
+               :activity_time => DateTime.new(2015,12,5,09,41,12),
+               :customer_id => 7,
+               :sales_category => '商品案内',
+               :sales_achievement => '継続',
+               :detail => 'お墓に添える造花の納品価格交渉中'
+               )
+
+History.create(:id => 98,
+               :activity_time => DateTime.new(2015,12,6,10,43,12),
+               :customer_id => 8,
+               :sales_category => '契約',
+               :sales_achievement => '達成',
+               :detail => 'CD販売の単独契約交渉成立'
+               )
+
+History.create(:id => 99,
+               :activity_time => DateTime.new(2015,12,7,11,13,49),
+               :customer_id => 9,
+               :sales_category => 'クレーム処理',
+               :sales_achievement => '継続',
+               :detail => '息子が峠でドリフトする'
+               )
+
+History.create(:id => 100,
+               :activity_time => DateTime.new(2015,12,7,17,13,49),
+               :customer_id => 10,
+               :sales_category => '商品案内',
+               :sales_achievement => '失敗',
+               :detail => '赤い染髪料は不要とのこと'
                )
