@@ -5,6 +5,7 @@ class StaffInfosController < ApplicationController
   # GET /staff_infos.json
   def index
     @staff_infos = StaffInfo.all
+    @sales_title = "社員表"
   end
 
   # GET /staff_infos/1

@@ -6,6 +6,7 @@ class HistoriesController < ApplicationController
   def index
     @histories = History.all
     @histories = History.page(params[:page])
+    @sales_title = "営業履歴管理表"
   end
 
   # GET /histories/1
