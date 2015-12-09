@@ -32,4 +32,6 @@ class History < ActiveRecord::Base
     return history_profit
   end
 
+  paginates_per 20  # 1ページあたり5項目表示
+
 end

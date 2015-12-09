@@ -2,6 +2,8 @@
 
 <h1>営業活動履歴</h1>
 
+<%= page_entries_info @histories %>
+
 <table>
   <thead>
     <tr>
@@ -35,3 +37,5 @@
 <br>
 
 <%= link_to '新規履歴登録', new_history_path %>
+
+<%= paginate @histories %>

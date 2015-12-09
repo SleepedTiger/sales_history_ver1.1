@@ -5,6 +5,7 @@ class HistoriesController < ApplicationController
   # GET /histories.json
   def index
     @histories = History.all
+    @histories = History.page(params[:page])
   end
 
   # GET /histories/1
