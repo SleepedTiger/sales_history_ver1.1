@@ -5,6 +5,7 @@ class CustomersController < ApplicationController
   # GET /customers.json
   def index
     @customers = Customer.all
+    @sales_title = "顧客データ"
   end
 
   # GET /customers/1
