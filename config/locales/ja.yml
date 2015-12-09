@@ -99,38 +99,38 @@ ja:
   errors:
     format: "%{attribute}%{message}"
     messages:
-      accepted: を受諾してくんしゃい
-      blank: を入力してくんしゃい
-      present: は入力せんどいて
-      confirmation: と%{attribute}の入力が一致せんバイ
+      accepted: を受諾してください
+      blank: を入力してください
+      present: は入力しないでください
+      confirmation: と%{attribute}の入力が一致しません
       empty: を入力してください
-      equal_to: は%{count}にしてくんしゃい
-      even: は偶数にしてくんしゃい
-      exclusion: は予約されとーバイ
-      greater_than: は%{count}より大きい値にしてくんしゃい
-      greater_than_or_equal_to: は%{count}以上の値にしてくんしゃい
-      inclusion: は一覧になかバイ
-      invalid: は不正な値バイ
-      less_than: は%{count}より小さい値にしてくんしゃい
-      less_than_or_equal_to: は%{count}以下の値にしてくんしゃい
-      not_a_number: は数値で入力してくんしゃい
-      not_an_integer: は整数で入力してくんしゃい
-      odd: は奇数にしてくんしゃい
-      record_invalid: バリデーションに失敗したバイ %{errors}
-      restrict_dependent_destroy: "%{record}が存在しとるけん削除できんバイ"
-      taken: はすでに存在しとーバイ
-      too_long: は%{count}文字以内で入力してくんしゃい
-      too_short: は%{count}文字以上で入力してくんしゃい
-      wrong_length: は%{count}文字で入力してくんしゃい
-      other_than: は%{count}以外の値にしてくんしゃい
+      equal_to: は%{count}にしてください
+      even: は偶数にしてください
+      exclusion: は予約されています
+      greater_than: は%{count}より大きい値にしてください
+      greater_than_or_equal_to: は%{count}以上の値にしてください
+      inclusion: は一覧にありません
+      invalid: は不正な値です
+      less_than: は%{count}より小さい値にしてください
+      less_than_or_equal_to: は%{count}以下の値にしてください
+      not_a_number: は数値で入力してください
+      not_an_integer: は整数で入力してください
+      odd: は奇数にしてください
+      record_invalid: バリデーションに失敗しました %{errors}
+      restrict_dependent_destroy: "%{record}が存在しているので削除できません"
+      taken: はすでに存在します
+      too_long: は%{count}文字以内で入力してください
+      too_short: は%{count}文字以上で入力してください
+      wrong_length: は%{count}文字で入力してください
+      other_than: は%{count}以外の値にしてください
     template:
-      body: 次の項目を確認してくんしゃい
+      body: 次の項目を確認してください
       header:
-        one: "%{model}にエラーが発生したバイ"
-        other: "%{model}に%{count}個のエラーが発生したバイ"
+        one: "%{model}にエラーが発生しました"
+        other: "%{model}に%{count}個のエラーが発生しました"
   helpers:
     select:
-      prompt: 選択してくんしゃい
+      prompt: 選択してください
     submit:
       create: 登録する
       submit: 保存する

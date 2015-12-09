@@ -61,3 +61,6 @@ gem "chartkick"
 
 #page-nation
 gem 'kaminari'
+
+# Gemfile
+gem 'devise'
