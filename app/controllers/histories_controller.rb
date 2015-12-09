@@ -12,6 +12,7 @@ class HistoriesController < ApplicationController
   # GET /histories/1
   # GET /histories/1.json
   def show
+    @sales_title = "営業履歴データ"
   end
 
   # GET /histories/new
@@ -21,6 +22,7 @@ class HistoriesController < ApplicationController
 
   # GET /histories/1/edit
   def edit
+    @sales_title = "営業履歴編集"
   end
 
   # POST /histories

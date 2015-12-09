@@ -11,6 +11,7 @@ class StaffInfosController < ApplicationController
   # GET /staff_infos/1
   # GET /staff_infos/1.json
   def show
+    @sales_title = "社員情報"
   end
 
   # GET /staff_infos/new
@@ -20,6 +21,7 @@ class StaffInfosController < ApplicationController
 
   # GET /staff_infos/1/edit
   def edit
+    @sales_title = "社員情報編集"
   end
 
   # POST /staff_infos
