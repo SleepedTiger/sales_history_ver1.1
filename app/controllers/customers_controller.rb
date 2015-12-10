@@ -5,12 +5,13 @@ class CustomersController < ApplicationController
   # GET /customers.json
   def index
     @customers = Customer.all
-    @sales_title = "顧客データ"
+    @sales_title = "顧客リスト"
   end
 
   # GET /customers/1
   # GET /customers/1.json
   def show
+    @sales_title = "顧客データ"
   end
 
   # GET /customers/new
@@ -20,6 +21,7 @@ class CustomersController < ApplicationController
 
   # GET /customers/1/edit
   def edit
+    @sales_title = "顧客データ編集"
   end
 
   # POST /customers
