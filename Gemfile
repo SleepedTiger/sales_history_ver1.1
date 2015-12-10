@@ -61,3 +61,6 @@ gem "chartkick"
 
 #page-nation
 gem 'kaminari'
+
+#グラフの年月日別集計
+gem 'by_star'
