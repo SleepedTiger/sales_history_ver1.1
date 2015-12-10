@@ -23,8 +23,8 @@ class History < ActiveRecord::Base
   belongs_to :staff_info
   validates :activity_time, :customer_id, :sales_category, :sales_achievement,presence: {present: true, message: "必須入力です。記入をお願いします。"}
 
-  def self.chart_h
-    history_dummy = History.where(sales_achievement:"達成").group(:staff_info_id).count
+  def self.chart_h(year = 2015 , month = 12)
+    history_dummy = History.where(sales_achievement:"達成").by_month(month, year: year, field: :activity_time).group(:staff_info_id).count
     history_profit = Hash.new
     history_dummy.each do |i,val|
       history_profit[StaffInfo.find(i).name] = val

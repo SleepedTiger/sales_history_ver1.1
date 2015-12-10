@@ -43,6 +43,8 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
+    by_star (2.2.1)
+      activesupport
     byebug (8.2.1)
     chartkick (1.4.1)
     choice (0.2.0)
@@ -169,6 +171,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  by_star
   byebug
   chartkick
   coffee-rails (~> 4.1.0)
