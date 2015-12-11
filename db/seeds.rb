@@ -999,3 +999,11 @@ History.create(:id => 100,
                :detail => '赤い染髪料は不要とのこと',
                :staff_info_id => 10
                )
+
+
+# デフォルトユーザー
+
+User.create(staff_id: 12345678,
+            password: "12345678",
+            password_confirmation: "12345678"
+            )
