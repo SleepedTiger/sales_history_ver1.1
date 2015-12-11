@@ -12,9 +12,11 @@
     <% @staff_infos.each do |staff_info| %>
       <tr>
         <td><%= staff_info.name %></td>
-        <td><%= link_to '参照', staff_info %></td>
-        <td><%= link_to '編集', edit_staff_info_path(staff_info) %></td>
-        <td><%= link_to '削除', staff_info, method: :delete, data: { confirm: '本当に良いですか?' } %></td>
+        <td id="common_button_staff">
+            <%= button_to '参照', staff_info , :class => 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent', method: :get %>
+            <%= button_to '編集', edit_staff_info_path(staff_info) ,:class => 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent', method: :get %>
+            <%= button_to '削除', staff_info, :class => 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent', method: :delete, data: { confirm: '本当に良いですか？' } %>
+        </td>
       </tr>
     <% end %>
   </tbody>

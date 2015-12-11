@@ -123,3 +123,48 @@ td {
   vertical-align: bottom;
   letter-spacing: -.02em;
 }
+
+//トップ画面
+
+.mdl-card__title-text {
+  margin: auto;
+}
+
+.button_to {
+  margin: 5px;
+}
+
+ .mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent {
+
+}
+
+#common_button .mdl-button{
+  font-size: 12px;
+  border: none;
+  border-radius: 2px;
+  height: 36px;
+  min-width: 20px;
+  padding: 0 8px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 36px;
+  vertical-align: middle;
+}
+
+#common_button_staff {
+  width: 40%;
+}
+
+#common_button_staff .button_to {
+  display: inline-block;
+  font-size: 12px;
+  border: none;
+  border-radius: 2px;
+  height: 36px;
+  min-width: 20px;
+  padding: 0 8px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 36px;
+  vertical-align: middle;
+}
