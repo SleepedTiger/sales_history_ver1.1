@@ -20,9 +20,11 @@
         <td><%= customer.address %></td>
         <td><%= customer.tel %></td>
         <td><%= customer.responsible_name %></td>
-        <td><%= link_to '参照', customer %></td>
-        <td><%= link_to '編集', edit_customer_path(customer) %></td>
-        <td><%= link_to '削除', customer, method: :delete, data: { confirm: '本当に良いですか?' } %></td>
+        <td id="common_button">
+            <%= button_to '参照', customer , :class => 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent', method: :get %>
+            <%= button_to '編集', edit_customer_path(customer) ,:class => 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent', method: :get %>
+            <%= button_to '削除', customer, :class => 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent', method: :delete, data: { confirm: '本当に良いですか？' } %>
+        </td>
       </tr>
     <% end %>
   </tbody>
