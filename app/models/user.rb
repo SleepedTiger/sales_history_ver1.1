@@ -34,6 +34,12 @@ class User < ActiveRecord::Base
     false
   end
 
+  has_and_belongs_to_many :roles
+
+  def has_role?(name)
+    self.roles.where(name: name).length > 0
+  end
+
   validates :staff_id, presence: true, uniqueness: true
 
 end

@@ -1001,9 +1001,31 @@ History.create(:id => 100,
                )
 
 
+# 権限
+
+Role.delete_all
+
+Role.create(id: 1,
+            name: "admin")
+
 # デフォルトユーザー
+
+
+
+User.delete_all
 
 User.create(staff_id: 12345678,
             password: "12345678",
             password_confirmation: "12345678"
             )
+
+User.create(staff_id: 1234,
+            password: "12345678",
+            password_confirmation: "12345678"
+            )
+
+class RolesUsers < ActiveRecord::Base; end
+RolesUsers.delete_all
+
+Role.find_by(name: "admin").users << User.find_by(staff_id: 12345678)
+
