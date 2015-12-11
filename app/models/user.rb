@@ -3,7 +3,7 @@
 # Table name: users
 #
 #  id                     :integer          not null, primary key
-#  email                  :string           default(""), not null
+#  email                  :string
 #  encrypted_password     :string           default(""), not null
 #  reset_password_token   :string
 #  reset_password_sent_at :datetime
@@ -19,28 +19,21 @@
 #
 # Indexes
 #
-#  index_users_on_email                 (email) UNIQUE
 #  index_users_on_reset_password_token  (reset_password_token) UNIQUE
 #  index_users_on_staff_id              (staff_id) UNIQUE
 #
 
 class User < ActiveRecord::Base
-  attr_accessor :login
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   # devise :database_authenticatable, :registerable,
   #        :recoverable, :rememberable, :trackable, :validatable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable,
-         :validatable, :authentication_keys => [:login]
+  devise :database_authenticatable,:rememberable, :trackable, :validatable
 
-  def self.find_first_by_auth_conditions(warden_conditions)
-    conditions = warden_conditions.dup
-    if login = conditions.delete(:login)
-      where(conditions).where(["staff_id = :value OR lower(email) = lower(:value)", { :value => login }]).first
-    else
-      where(conditions).first
-    end
+  def email_required?
+    false
   end
+
+  validates :staff_id, presence: true, uniqueness: true
 
 end
