@@ -12,6 +12,7 @@
 <body>
 
 
+  <% if user_signed_in? %>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
   mdl-layout--fixed-header">
   <header class="mdl-layout__header">
@@ -21,6 +22,11 @@
   </header>
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">メニュー</span>
+    <div class="side-login">
+    <p class="staff-name" >社員名</p>
+    <p>を表示します</p>
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+    </div>
     <nav class="mdl-navigation">
       <a class="mdl-navigation__link" href=" <%= root_path %> "><i class="material-icons">account_balance</i>TOP</a>
       <a class="mdl-navigation__link" href=" <%= histories_path %> "><i class="material-icons">business</i>営業リスト</a>
@@ -35,7 +41,13 @@
       <%= yield %>
     </div>
   </main>
-</div>
+  </div>
+
+  <% else %>
+  <%= yield %>
+
+  <% end %>
+    </div>
 
 
 </body>

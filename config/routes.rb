@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  devise_for :users, :controllers => {
+   :registrations => 'users/registrations'
+  }
+  # devise_for :users
+  get 'login/index'
+
+  get 'login/show'
+
   get "graph" => "sales_graph#show"
   resources :staff_infos
   resources :histories
