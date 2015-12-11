@@ -11,6 +11,7 @@ class SalesGraphController < ApplicationController
   end
 
     @monthly_hash = History.chart_h(@year, @month)
+    @year_hash = History.chart_year_h(@year)
 
   end
 

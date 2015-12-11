@@ -32,6 +32,15 @@ class History < ActiveRecord::Base
     return history_profit
   end
 
+  def self.chart_year_h(year = 2014)
+    history_dummy = History.where(sales_achievement:"達成").by_year(year, field: :activity_time).group(:staff_info_id).count
+    history_profit = Hash.new
+    history_dummy.each do |i,val|
+      history_profit[StaffInfo.find(i).name] = val
+    end
+    return history_profit
+  end
+
   paginates_per 20  # 1ページあたり5項目表示
 
 end
